@@ -1,0 +1,30 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Car Insurance</h1>
+    <p class="lead">Welcome to the Car Insurance Application. Manage your insurance quotes and customer information.</p>
+    <p>@Html.ActionLink("View Insurees", "Index", "Insuree", null, new { @class = "btn btn-primary btn-lg" })</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Get Started</h2>
+        <p>
+            Create a new insurance quote for your customers.
+        </p>
+        <p>@Html.ActionLink("Create New Insuree", "Create", "Insuree", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>View All</h2>
+        <p>View all existing insurance quotes and customer information.</p>
+        <p>@Html.ActionLink("View All Insurees", "Index", "Insuree", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>About</h2>
+        <p>Learn more about our insurance application.</p>
+        <p>@Html.ActionLink("Learn More", "About", "Home", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
+
